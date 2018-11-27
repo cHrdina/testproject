@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+background: url(../img/bg.jpg) ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.flex {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex; 
+  justify-content: center;/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	
+ }
+
+.main-content {
+	width: 90%;
+	text-align: center;
+	max-width: 980px;
+}
+#signup{
+	margin-top: 5rem;
+	margin-bottom: 10rem;
+	text-align: center;
+}
+
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select{
+	width:75%;
+	
+}
+
+hr {
+	width: 100%;
+}
+
+#thank-you {
+	background: rgba(255,255,255,0.75);
+	margin: 10% 0;
+	padding: 3rem 0 1rem 0;
+}
+
+#guide {
+	background: rgba(255,255,255,0.75);
+	margin: 5% 0;
+	padding: 5rem 0 5rem 0;
+}
+
+.guide {
+	width: 90%;
+	max-width: 600px;
+}
+
+.guidecaption {
+	font-style: italic;
+	font-weight: 400 !important; 
+}
+
+.guidestep {
+	margin-top: 10rem;
+	margin-bottom: 0.5rem;
+}
+
+#vp_img {
+	margin: 0rem 0;
+	width: 100%;
+	max-width: 980px;
+}
+
+#eh {
+	margin-top: 10rem;
+	text-align:center;
+}
+
+#vp {
+	margin-top: -01rem;
+	text-align: center;
+}
+
+#tourdates {
+	margin-top: -2rem;
+	margin-bottom: 10rem;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	#vp {
+	margin-top: 9.8rem;
+	text-align: right;
+}
+	
+	#eh {
+	margin-top: 10rem;
+	text-align:left;
+}
+	
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	
+		#vp {
+	margin-top: 9.8rem;
+	text-align: right;
+}
+	
+	#eh {
+	margin-top: 10rem;
+	text-align:left;
+}
+	
+	.main-video {
+	width: 50%;
+}
+	
+	.main-content {
+		width: 100%;
+	}
+	
+	hr {
+		width:100%;
+	}
+	
+	input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select{
+	width:50%;
+	
+}
+	
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	.main-video {
+	width: 40%;
+	text-align: center;
+	margin: 5rem 0;
+}
+	
+	input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select{
+	width:50%;
+	
+}
+	
+hr {
+	width: 100%;
+}
+
+	
+	
+}
