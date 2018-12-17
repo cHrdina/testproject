@@ -19,10 +19,13 @@
     </head>
 
     <body>
-
+        <!-- Sticky Navbar -->
         <div id="navbar" class="sticky">
-            <a href="#video"> VIDEO </a>
-            <a href="#tourdates"> TOUR DATES </a>
+            <a href="#tourdates-anchor"> TOUR DATES </a>
+            <a href="#merch-anchor"> MERCH </a>
+            <a href="https://www.facebook.com" target="_blank"><img class="social-media-icon" src="img/facebook_icon_square.png" /></a>
+            <a href="https://www.instagram.com/endlessheights_" target="_blank"><img class="social-media-icon" src="img/instagram_icon.png" /></a>
+            <a href="https://www.spotify.com" target="_blank"><img class="social-media-icon" src="img/spotify_icon_round.png" /></a>
         </div>
 
         <div class="flex">
@@ -44,9 +47,10 @@
 
         </div>
 
+        <a class="anchor" id="video-anchor"></a>
         <div class="flex" id="signup">
 
-            <section class="main-content" role="main" id="video">
+            <section class="main-content" role="main">
 
                 <hr>
 
@@ -61,7 +65,8 @@
         </div>
 
 
-        <div class="flex" id="tourdates">
+        <a class="anchor" id="tourdates-anchor"></a>
+        <div class="flex">
 
             <section class="main-content" role="main">
                 <h3>Tour Dates</h3>
@@ -69,6 +74,127 @@
                     data-background-color="rgba(0,0,0,0)" data-display-limit="10" data-link-text-color="#FFFFFF"></a>
             </section>
 
+        </div>
+
+
+        <!-- Merch Embed code -->
+        <a class="anchor" id="merch-anchor"></a>
+        <div class="flex">
+            <section class="main-content" role="main">
+                <h3>Merch</h3>
+                <div id='collection-component-012f46ef7f5'></div>
+                <script type="text/javascript">
+                    /*<![CDATA[*/
+
+                    (function() {
+                        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                        if (window.ShopifyBuy) {
+                            if (window.ShopifyBuy.UI) {
+                                ShopifyBuyInit();
+                            } else {
+                                loadScript();
+                            }
+                        } else {
+                            loadScript();
+                        }
+
+                        function loadScript() {
+                            var script = document.createElement('script');
+                            script.async = true;
+                            script.src = scriptURL;
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                            script.onload = ShopifyBuyInit;
+                        }
+
+                        function ShopifyBuyInit() {
+                            var client = ShopifyBuy.buildClient({
+                                domain: '24hundred-store.myshopify.com',
+                                storefrontAccessToken: 'b7614820a4bfd1fecef8090e7781aab5',
+                            });
+
+                            ShopifyBuy.UI.onReady(client).then(function(ui) {
+                                ui.createComponent('collection', {
+                                    id: 388525379,
+                                    node: document.getElementById('collection-component-012f46ef7f5'),
+                                    moneyFormat: '%24%7B%7Bamount%7D%7D',
+                                    options: {
+                                        "product": {
+                                            "variantId": "all",
+                                            "contents": {
+                                                "imgWithCarousel": false,
+                                                "variantTitle": false,
+                                                "description": false,
+                                                "buttonWithQuantity": false,
+                                                "quantity": false
+                                            },
+                                            "styles": {
+                                                "product": {
+                                                    "@media (min-width: 601px)": {
+                                                        "max-width": "calc(25% - 20px)",
+                                                        "margin-left": "20px",
+                                                        "margin-bottom": "50px"
+                                                    },
+                                                    "imgWrapper": {
+                                                        "position": "relative",
+                                                        "height": "0",
+                                                        "padding-top": "calc(75% + 15px)"
+                                                    },
+                                                    "img": {
+                                                        "height": "calc(100% - 15px)",
+                                                        "position": "absolute",
+                                                        "left": "0",
+                                                        "right": "0",
+                                                        "top": "0"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "cart": {
+                                            "contents": {
+                                                "button": true
+                                            },
+                                            "styles": {
+                                                "footer": {
+                                                    "background-color": "#ffffff"
+                                                }
+                                            }
+                                        },
+                                        "modalProduct": {
+                                            "contents": {
+                                                "img": false,
+                                                "imgWithCarousel": true,
+                                                "variantTitle": false,
+                                                "buttonWithQuantity": true,
+                                                "button": false,
+                                                "quantity": false
+                                            },
+                                            "styles": {
+                                                "product": {
+                                                    "@media (min-width: 601px)": {
+                                                        "max-width": "100%",
+                                                        "margin-left": "0px",
+                                                        "margin-bottom": "0px"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "productSet": {
+                                            "styles": {
+                                                "products": {
+                                                    "@media (min-width: 601px)": {
+                                                        "margin-left": "-20px"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                });
+                            });
+                        }
+                    })();
+                    /*]]>*/
+                </script>
+            </section>
         </div>
 
         <!-- Google Code for Remarketing Tag -->
